@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code Error Correction Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Code Error Correction Chatbot</h1>
+      <div class="controls">
+        <!-- Button to go back to the main editor -->
+        <button onclick="window.location.href='index.html'">
+          Back to Editor
+        </button>
+      </div>
+    </header>
+
+    <div id="chatbot-container">
+      <textarea
+        id="chatbot-code"
+        placeholder="Paste your code here..."
+        rows="15"
+      ></textarea>
+      <br />
+      <button id="submit-code">Submit for Correction</button>
+    </div>
+
+    <div id="chatbot-output-container">
+      <h2>Corrected Code & Explanation:</h2>
+      <pre id="chatbot-output"></pre>
+    </div>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>

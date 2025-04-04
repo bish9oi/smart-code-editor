@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Load Monaco Editor AMD loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Code Editor</h1>
+      <div class="controls">
+        <label for="language-select">Choose an option:</label>
+        <select id="language-select">
+          <option value="javascript" selected>JavaScript</option>
+          <!-- <option value="python">Python</option> -->
+          <option value="java">Java</option>
+          <!-- <option value="cpp">C++</option> -->
+        </select>
+        <button id="run-button">Run</button>
+        <!-- <button id="optimize-button">Optimize</button> -->
+        <!-- New Chatbot button -->
+        <!-- <button
+          id="chatbot-button"
+          onclick="window.location.href='chatbot.html'"
+        >
+          Chatbot
+        </button> -->
+      </div>
+    </header>
+
+    <!-- Editor Container -->
+    <div id="editor"></div>
+
+    <!-- (Optional) Autocompletion Suggestions Div -->
+    <div id="autocomplete-suggestions"></div>
+
+    <!-- Output Panel -->
+    <div id="output-container">
+      <h2>Execution Output:</h2>
+      <pre id="output"></pre>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

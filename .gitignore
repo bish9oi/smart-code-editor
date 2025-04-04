@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*  # e.g., .env.local, .env.production
+
+# Dependency lock file (optional)
+# Uncomment the next line if you DO NOT want to track package-lock.json
+package-lock.json
