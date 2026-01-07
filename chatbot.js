@@ -1,7 +1,8 @@
+
 document.getElementById("submit-code").addEventListener("click", async function() {
     const code = document.getElementById("chatbot-code").value;
     try {
-      const response = await fetch('/chat', {
+      const response = await fetch('/chatbot', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code })
